@@ -17,3 +17,16 @@ python codex_clone.py "create a new dbt model for analyzing the performance of c
 ```
 
 When the agent finishes, the script prints the git diff between the last two commits. Push your changes and open a PR as desired.
+
+## Web interface
+
+The project also includes a small Flask app for managing tasks through a browser.
+
+Run it with:
+
+```bash
+python web_ui.py
+```
+
+Open `http://localhost:5000` to add a new task and review diffs. If a task has
+no PR, you can click **Create PR** to simulate creating one.
